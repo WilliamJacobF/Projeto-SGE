@@ -18,7 +18,13 @@ class SGEcontroller extends Controller
     }
 
     public function store(Request $request){
-        Cliente::create($request->all());
+        $validacao = $request->validate([
+            'nome' => 'required',
+            'sobrenome' => 'required',
+            'email' => 'required',
+            'celular' => 'required'
+        ]);
+        cliente::create($request->all());
         return redirect()->route('clientes-index');
     }
 
@@ -40,12 +46,12 @@ class SGEcontroller extends Controller
 
         ];
         cliente::where('id',$id)->update($data);
-        return redirect()->route('Clientes-index');
+        return redirect()->route('clientes-index');
     }
 
     public function destroy($id){
         cliente::where('id',$id)->delete();
-        return redirect()->route('Clientes-index');
+        return redirect()->route('clientes-index');
     }
 
 
