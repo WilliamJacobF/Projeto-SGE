@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\SGEcontroller;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('clientes', SGEcontroller::class);
