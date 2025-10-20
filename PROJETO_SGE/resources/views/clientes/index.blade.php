@@ -10,7 +10,7 @@
       <th scope="col">Nome</th>
       <th scope="col">Sobrenome</th>
       <th scope="col">Email</th>
-      <th scope="col">celular</th>
+      <th scope="col">Idade</th>
     </tr>
   </thead>
   <tbody>
