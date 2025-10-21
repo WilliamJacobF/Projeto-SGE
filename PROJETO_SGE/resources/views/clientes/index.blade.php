@@ -33,5 +33,6 @@
   </tbody>
 </table>
 <a href="{{ route('clientes-create') }}" class="btn btn-primary">Novo cliente</a>
+<a href="/" class="btn btn-primary">Voltar</a>
 
 @endsection

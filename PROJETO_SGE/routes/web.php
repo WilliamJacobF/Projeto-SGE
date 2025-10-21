@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Estoquecontroller;
+use App\Http\Controllers\Financascontroller;
 use App\Http\Controllers\SGEcontroller;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,16 @@ Route::post('/produtos', [Estoquecontroller::class, 'store'])->name('produtos-st
 Route::get('/produto/{id}/edit', [Estoquecontroller::class, 'edit'])->where('id', '[0-9]+')->name('produtos-edit');
 Route::put('/produtos{id}', [EStoquecontroller::class, 'update'])->where('id', '[0-9]+')->name('produtos-update');
 Route::delete('/produtos{id}', [Estoquecontroller::class, 'destroy'])->where('id', '[0-9]+')->name('produtos-destroy');
+
+//rotas financias
+
+Route::get('/financias', [Financascontroller::class, 'index'])->name('financias-index');
+Route::get('/create/financias', [Financascontroller::class, 'create'])->name('financias-create');
+Route::post('/financias', [Financascontroller::class, 'store'])->name('financias-store');
+Route::get('/financia/{id}/edit', [Financascontroller::class, 'edit'])->where('id', '[0-9]+')->name('financias-edit');
+Route::put('/financias{id}', [Financascontroller::class, 'update'])->where('id', '[0-9]+')->name('financias-update');
+Route::delete('/financias{id}', [Financascontroller::class, 'destroy'])->where('id', '[0-9]+')->name('financias-destroy');
+
+//rota da home
+
+Route::get('/', function () { return view('home.index'); });

@@ -33,5 +33,6 @@
   </tbody>
 </table>
 <a href="{{ route('produtos-create') }}" class="btn btn-primary">Novo produto</a>
+<a href="/" class="btn btn-primary">Voltar</a>
 
 @endsection
