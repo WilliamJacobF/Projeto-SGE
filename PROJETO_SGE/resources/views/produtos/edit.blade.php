@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Edição de produto</h1>
+<h1>EDIÇÃO DE PRODUTO</h1>
 <hr>
 <form action="{{ route('produtos-update',['id'=>$produtos->id]) }}" method="POST">
 @csrf

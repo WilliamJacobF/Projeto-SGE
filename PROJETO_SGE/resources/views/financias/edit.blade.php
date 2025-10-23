@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Edição de Registro</h1>
+<h1>EDIÇÃO DE RESGISTRO</h1>
 <hr>
 <form action="{{ route('financias-update',['id'=>$financias->id]) }}" method="POST">
 @csrf

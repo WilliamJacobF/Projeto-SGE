@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Registro de financias</h1>
+<h1>REGISTRO DE FINANCIAS</h1>
 <hr>
 <table class="table table-hover">
   <thead>

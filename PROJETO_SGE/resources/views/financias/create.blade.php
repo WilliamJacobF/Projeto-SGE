@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Novo Resgistro</h1>
+<h1>NOVO REGISTRO</h1>
 <hr>
 <form action="{{ route('financias-store') }}" method="POST">
     @csrf

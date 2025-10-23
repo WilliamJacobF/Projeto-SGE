@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Listagem de produtos</h1>
+<h1>LISTAGEM DE PRODUTOS</h1>
 <hr>
 <table class="table table-hover">
   <thead>

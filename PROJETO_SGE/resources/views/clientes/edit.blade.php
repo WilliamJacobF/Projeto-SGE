@@ -1,11 +1,11 @@
 @extends('layout.main')
 
 @section('content')
-<h1>Edição de cliente</h1>
+<h1>EDIÇÃO DE CLIENTE</h1>
 <hr>
 <form action="{{ route('clientes-update',['id'=>$clientes->id]) }}" method="POST">
-@csrf
-@method('PUT')
+  @csrf
+  @method('PUT')
   <div class="mb-3">
     <label for="nome" class="form-label">Nome</label>
     <input type="text" name="nome" class="form-control" value="{{ $clientes->nome }}">
@@ -20,16 +20,16 @@
   </div>
   <div class="mb-3">
     <label for="idade" class="form-label">celular</label>
-    <input type="text" name="celular" class="form-control"value="{{ $clientes->celular }}">
+    <input type="text" name="celular" class="form-control" value="{{ $clientes->celular }}">
   </div>
   <button type="submit" class="btn btn-primary">Salvar</button>
 </form>
 <br>
 
 @if($errors->any())
-  @foreach($errors->all() as $error)
-    <p>{{$error}}</p>
-  @endforeach
+@foreach($errors->all() as $error)
+<p>{{$error}}</p>
+@endforeach
 @endif
 
 @endsection
