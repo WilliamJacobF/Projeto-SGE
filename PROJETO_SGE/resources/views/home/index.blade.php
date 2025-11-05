@@ -19,13 +19,17 @@
 
         h1 {
             text-align: center;
-            color: black;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 10px;
             margin-top: 40px;
         }
 
         h3 {
             text-align: center;
-            color: black;
+            color: white;
+            font-size: 1.1rem;
+            opacity: 0.9;
             margin-bottom: 30px;
         }
 
@@ -47,9 +51,10 @@
 </head>
 
 <body>
+    
+    <div class="box">
     <h1>PROJETO SGE</h1>
     <h3>Projeto de Extensão - Sistema de Gerenciamento Empresarial</h3>
-    <div class="box">
         <a href="{{ route('clientes-index') }}" class="btn btn-primary">Gerenciar Clientes</a>
         <a href="{{ route('produtos-index') }}" class="btn btn-primary">Gerenciar Estoque</a>
         <a href="{{ route('financias-index') }}" class="btn btn-primary">Gerenciar Finanças</a>
