@@ -7,7 +7,7 @@
 - disciplina acadêmica que permite uma atuação junto à comunidade por meio da implementação de um projeto com foco em soluções coletivas e que traga melhorias para um grupo de pessoas daquela localidade.
 
 ---
-## 📌 Funcionalidades
+## 📌 Funcionalidade
 
 - Permite o gerenciamento de registros financeiros, produtos e clientes.
 
