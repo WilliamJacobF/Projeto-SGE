@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Cliente extends Model
@@ -12,4 +13,5 @@ class Cliente extends Model
         'email',
         'celular',
     ];
+    use HasFactory;
 }
