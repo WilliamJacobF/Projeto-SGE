@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Produto extends Model
 {
@@ -12,4 +13,5 @@ class Produto extends Model
         'data_de_recebimento',
         'preço_unitario',
     ];
+    use HasFactory;
 }

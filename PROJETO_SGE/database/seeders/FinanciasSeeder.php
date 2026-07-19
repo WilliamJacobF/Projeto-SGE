@@ -2,17 +2,18 @@
 
 namespace Database\Seeders;
 
+use Database\Factories\FinanciaFactory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Cliente;
+use App\Models\Financia;
 
-class ClientesSeeder extends Seeder
+class FinanciasSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Cliente::factory(7)->create();
+        Financia::factory(7)->create();
     }
 }

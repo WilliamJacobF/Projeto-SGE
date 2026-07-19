@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Cliente;
+use App\Models\Financia;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -16,6 +17,10 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
-        $this->call(ClientesSeeder::class);
+        $this->call([
+            ClientesSeeder::class,
+            FinanciasSeeder::class,
+            ProdutosSeeder::class
+            ]);
 }
 }

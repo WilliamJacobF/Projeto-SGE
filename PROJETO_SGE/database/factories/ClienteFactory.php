@@ -19,8 +19,8 @@ class ClienteFactory extends Factory
         return [
             'nome' => fake()->name(),
             'sobrenome' => fake()->name(),
-            'email' => fake()->name(),
-            'celular' => fake()->name(),
+            'email' => fake()->safeEmail(),
+            'celular' => fake()->phoneNumber(),
         ];
     }
 }
