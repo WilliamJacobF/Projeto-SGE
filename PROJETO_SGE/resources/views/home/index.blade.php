@@ -52,7 +52,10 @@
 </head>
 
 <body>
-
+    <li class="nav-item">
+        <a href="/login" class="nav-item">Entrar</a>
+        <a href="/register" class="nav-item">Cadastrar</a>
+    </li>
     <div class="box">
         <h1>PROJETO SGE</h1>
         <h3>Projeto de Extensão - Sistema de Gerenciamento Empresarial</h3>
